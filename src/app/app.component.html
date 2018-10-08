@@ -1,0 +1,14 @@
+<div class="container">
+
+  <button (click)="onSuccess()">Success</button>
+  <button (click)="onFailure()">Warning</button>
+
+  <div class="row p-3 mb-2 bg-danger text-white" *ngIf="isShownFailure">
+    <app-warning-alert></app-warning-alert>
+  </div>
+  <br><br>
+  <div class="row p-3 mb-2 bg-success text-white" *ngIf="isShownSuccess ">
+      <app-success-alert></app-success-alert>
+  </div>
+</div>
+
